@@ -1,0 +1,11 @@
+<h1>Longestword#game</h1>
+<p><%= @grille %></p>
+
+
+<form action="/score">
+  <label for="grille">Magne toi de trouver un mot</label>
+  <input type="text" id="grille" name="user_word" placeholder="tape ton mot mec !">
+  <input type="hidden" name="grille" value="<%= @grille %>" >
+  <input type="hidden" name="start_time" value="<%= @start_time %>">
+  <input type="submit" value="Go on!">
+</form>
